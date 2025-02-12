@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Barber Dog</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <meta name="description" content="Professional pet grooming services">
+    <meta name="keywords" content="pet grooming, dog grooming, cat grooming">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="images/logo.png" alt="Barber Dog Logo">
+                <h2>Admin Panel</h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#dashboard">
+                            <span class="icon">📊</span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#bookings">
+                            <span class="icon">📅</span>
+                            Bookings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            <span class="icon">✂️</span>
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#products">
+                            <span class="icon">🛍️</span>
+                            Products
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="user-info">
+                <img src="images/admin-avatar.jpg" alt="Admin" class="avatar">
+                <div class="user-details">
+                    <h4>Admin Name</h4>
+                    <p>Administrator</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button>🔍</button>
+                </div>
+                <div class="header-actions">
+                    <button class="notifications">
+                        🔔
+                        <span class="badge">3</span>
+                    </button>
+                    <button class="settings">⚙️</button>
+                </div>
+            </header>
+
+            <!-- Dashboard Overview -->
+            <section class="dashboard-overview">
+                <h1>Dashboard Overview</h1>
+                
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-info">
+                            <h3>Total Bookings</h3>
+                            <p class="stat-number">150</p>
+                            <span class="trend up">↑ 12%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-info">
+                            <h3>Revenue</h3>
+                            <p class="stat-number">$3,250</p>
+                            <span class="trend up">↑ 8%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🛍️</div>
+                        <div class="stat-info">
+                            <h3>Products Sold</h3>
+                            <p class="stat-number">75</p>
+                            <span class="trend down">↓ 3%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Bookings -->
+                <div class="recent-bookings">
+                    <div class="section-header">
+                        <h2>Recent Bookings</h2>
+                        <button class="view-all">View All</button>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer</th>
+                                    <th>Service</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>Full Grooming</td>
+                                    <td>2024-02-20</td>
+                                    <td>10:00 AM</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td>
+                                        <button class="action-btn">View</button>
+                                        <button class="action-btn">Edit</button>
+                                    </td>
+                                </tr>
+                                <!-- More booking rows... -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Calendar View -->
+                <div class="calendar-section">
+                    <div class="section-header">
+                        <h2>Booking Calendar</h2>
+                        <div class="calendar-controls">
+                            <button>Previous</button>
+                            <span>February 2024</span>
+                            <button>Next</button>
+                        </div>
+                    </div>
+                    <div class="calendar-grid">
+                        <!-- Calendar will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html> 
