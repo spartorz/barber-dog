@@ -34,9 +34,35 @@ body {
 /* Modern Dashboard Layout */
 .dashboard-container {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 250px 1fr;
     min-height: 100vh;
-    background: var(--gray-100);
+}
+
+.dashboard-main {
+    padding: 2rem;
+    background: var(--bg-light);
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+}
+
+.management-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
 }
 
 /* Sleek Sidebar */
@@ -153,14 +179,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
-}
-
-.stat-card {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: 16px;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition);
 }
 
 .stat-card:hover {
@@ -327,4 +345,6 @@ tr:hover {
     .search-bar input {
         width: 200px;
     }
-} 
+}
+
+/* Add more dashboard styles as needed */ 

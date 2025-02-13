@@ -2,8 +2,9 @@ services:
   - type: web
     name: barber-dog
     env: node
-    buildCommand: npm install
+    buildCommand: npm install && npm run build
     startCommand: node backend/server.js
+    healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
         value: production
@@ -11,4 +12,6 @@ services:
         sync: false # You'll set this in Render dashboard
       - key: JWT_SECRET
         sync: false # You'll set this in Render dashboard
-    autoDeploy: true 
+    autoDeploy: true
+    domains:
+      - barber-dog.onrender.com 
